@@ -40,12 +40,7 @@
     background-color: #53d4b6;
 }
 
-#lamp, #desktop, #pot {
-    position: relative;
-    max-width: 100%; 
-    height: auto;  
-    z-index: 10;
-}
+
 
 #lamp{
     position: absolute;
@@ -69,7 +64,7 @@
     position: absolute;
     height: 165px;  
     width: 309px;
-    top: 11.77%;
+    top: 11.27%;
     left: 19.2%;
     z-index: 10;
     background-color: wheat;
@@ -89,7 +84,7 @@
    padding-top: 50px;
    height: auto;
    width: 100%;
-   border: 2px solid #53d4b6;
+   border: 2px;
    border-radius: 8px;
 }
 
@@ -101,11 +96,12 @@
         position: relative;
     }
 
-    #lamp, #desktop, #pot #code{
+    #lamp, #desktop, #pot, #code{
         position: relative; /* Disable absolute positioning */
         max-width: 80%;  /* Allow images to scale down */
         height: auto;  /* Ensure aspect ratio is maintained */
     }
+
 
     /* Adjust intro padding */
     #intro {
@@ -194,5 +190,5 @@
   #girlimage{
     position: absolute;
     left:55%;
-    bottom:3.4%;
+    bottom:2.95%;
   }
