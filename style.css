@@ -144,19 +144,14 @@
   }
   
   
-  #javascriptimage{
+  #javascript-image, #react-image, #nodejs-image{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
   }
 
-  #skills1 .col-sm-4{
-    display : flex;
-    justify-content: center;
-    align-items: center;
-  }
-
+  
   .card{
     margin-top: 30px;
     border-radius: 20px;
@@ -192,3 +187,37 @@
     left:55%;
     bottom:2.95%;
   }
+
+ /* Style for the wrapper */
+#skills1-wrapper {
+  overflow: hidden;
+  width: 100%; /* Ensures the container takes up the full width of the viewport */
+}
+
+/* Make the container a flexbox */
+#skills1 {
+  display: flex;
+  animation: move-cards 15s linear infinite;
+}
+
+/* Keyframe for continuous horizontal movement */
+@keyframes move-cards {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Style for the cards */
+.card {
+  margin-right: 20px; /* Space between cards */
+}
+
+/* Ensure that the layout doesn't wrap */
+.row {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
